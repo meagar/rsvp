@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres
+    # volumes:
+      # - ./tmp/db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: "pgadmin"
+      POSTGRES_PASSWORD: "password"
+    ports:
+      - "127.0.0.1:5433:5432"
